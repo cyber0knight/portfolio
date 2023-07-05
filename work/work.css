@@ -24,7 +24,7 @@ body::-webkit-scrollbar{
   height: 100%;
   z-index: 120;
   background: linear-gradient(90deg,green,blue,crimson,rgb(142, 142, 219),rgb(3, 188, 3),rgb(135, 18, 41),rgb(68, 68, 79),rgb(74, 108, 74),rgb(190, 5, 42)) 0 0 / 1000% no-repeat;
-  animation: animate 500s ease infinite;
+  animation: animate 20s ease infinite;
 }
 .drop .dropDown{
   display: flex;
@@ -330,14 +330,14 @@ body::-webkit-scrollbar{
     filter: blur(5px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    animation: animate 20s linear infinite;
+    animation: glow 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease;
 }
 .s2 .box:hover:before{
   opacity: 1;
 }
-@keyframes animate {
+@keyframes glow {
   0%{
     background-position: 0 0;
   }
